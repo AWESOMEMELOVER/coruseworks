@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+</head>
+<body>
+<section class="container-fluid bg">
+	<section class="row justify-content-center">
+		<section class="col-12 col-sm-6 col-md-3">
+			<form class="form-container">
+			  <div class="form-group">
+			    <label for="email_input_field">Email address</label>
+			    <input type="email" class="form-control" id="email_input_field" placeholder="name@example.com">
+			  </div>
+			  <div class="input-group">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text">First and last name</span>
+			  </div>
+			  <input type="text" aria-label="First name" class="form-control" id="firstname_input_field">
+			  <input type="text" aria-label="Last name" class="form-control" id="lastname_input_field">
+			</div>
+			  <div class="form-group">
+			    <label for="faculty_selection">Select Faculty</label>
+			    <select class="form-control" id="faculty_selection">
+			      <option>Informatics</option>
+			      <option>Law</option>
+			      <option>Economics</option>
+			      <option>Humanities</option>
+			      <option>Natural scinces</option>
+			      <option>Sociology</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="course_selection">Select Course</label>
+			    <select class="form-control" id="course_selection">
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			      <option>5</option>
+			      <option>6</option>
+			    </select>
+			  </div>
+			  <button type="submit" class="btn btn-primary btn-block" id="submition_btn">Submit</button>
+			</form>
+		</section>
+	</section>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
